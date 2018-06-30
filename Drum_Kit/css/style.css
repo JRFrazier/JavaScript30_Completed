@@ -1,0 +1,57 @@
+body {
+  background-color: #00FFFF;
+  -webkit-animation: 20s ease infinite colors;
+  -webkit-animation-delay: 4s;
+  animation: 20s linear infinite colors;
+  animation-
+}
+@-webkit-keyframes colors {
+  0% {background-color: #00FFFF}
+  25% {background-color: #66FF66}
+  50% {background-color: #FF6EFF}
+  75% {background-color: #FF9933}
+  10% {background-color: #FFFF66}
+}
+@keyframes colors {
+  0% {background-color: #00FFFF}
+  25% {background-color: #66FF66}
+  50% {background-color: #FF6EFF}
+  75% {background-color: #FF9933}
+  10% {background-color: #FFFF66}
+}
+body,html {
+  font-family: sans-serif;
+}
+.keys {
+  min-height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.key {
+  margin: 10px;
+  border: 2px solid black;
+  height: 100px;
+  width: 100px;
+  border-radius: 15px;
+  background-color:rgb(0,0,0,0.5);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: all .07s ease;
+}
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+.playing > .sound {
+  color: #ffc600;
+}
+kdb {
+  font-size: 3em;
+}
+span {
+  font-size: 1.3em;
+}
